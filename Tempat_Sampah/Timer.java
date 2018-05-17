@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import greenfoot.Color;
 /**
  * Write a description of class Timer here.
  * 
@@ -8,12 +8,43 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Timer extends Actor
 {
+    private int time = 45;
+    private int count = 45;
     /**
      * Act - do whatever the Timer wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        if(time == 0)
+        {
+            ((Bersih)getWorld()).gameOver();
+            Greenfoot.stop();
+        }
+        if(counter())
+        {
+            time--;
+            count = 45;
+        }
+        display();
+    }  
+    
+    private boolean counter()
+    {
+        if(count > 0)
+        {
+            count--;
+        }
+        return count == 0;
+    }
+    
+    private void display()
+    {
+        setImage(new GreenfootImage("Time: "+ time +" sec", 30, Color.BLACK, new Color(0, 0, 0, 0)));
+    }
+   
+    public boolean isTimeUp()
+    {
+        return time == 0;
+    }
 }

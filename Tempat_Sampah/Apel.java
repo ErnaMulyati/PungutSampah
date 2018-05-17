@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Botol here.
+ * Write a description of class Apel here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Botol extends Sampah
+public class Apel extends Sampah
 {
     /**
-     * Act - do whatever the Botol wants to do. This method is called whenever
+     * Act - do whatever the Apel wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
@@ -19,7 +19,7 @@ public class Botol extends Sampah
         }
         
         if(getX() >= 999){
-            getWorld().addObject(new Daun(),0, 197);
+            getWorld().addObject(new Kertaskusut(),0, 197);
             getWorld().removeObject(this);
             return;
         }
@@ -32,26 +32,26 @@ public class Botol extends Sampah
         }
         
         if(Greenfoot.mouseDragEnded(this)){
-            if(getOneIntersectingObject(Kaca.class) !=null){
+            if(getOneIntersectingObject(Organik.class) !=null){
                 ((Bersih) getWorld()).countPop();
-                getWorld().addObject(new Kertasrusak(),0, 197);
+                getWorld().addObject(new Botolsoda(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(Kaleng.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kertasrusak(),0, 197);
+                getWorld().addObject(new Botolsoda(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(SampahKertas.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kertasrusak(),0, 197);
+                getWorld().addObject(new Botolsoda(),0, 197);
                 getWorld().removeObject(this);
             }
-            else if(getOneIntersectingObject(Organik.class) !=null){
+            else if(getOneIntersectingObject(Kaca.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kertasrusak(),0, 197);
+                getWorld().addObject(new Botolsoda(),0, 197);
                 getWorld().removeObject(this);
             }
-    } 
+    }
     }    
 }
