@@ -34,22 +34,22 @@ public class Cangkir extends Sampah
         if(Greenfoot.mouseDragEnded(this)){
             if(getOneIntersectingObject(Kaca.class) !=null){
                 ((Bersih) getWorld()).countPop();
-                getWorld().addObject(new Kalengcat(),0, 197);
+                getWorld().addObject(new Pisang(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(SampahKertas.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kalengcat(),0, 197);
+                getWorld().addObject(new Pisang(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(Kaleng.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kalengcat(),0, 197);
+                getWorld().addObject(new Pisang(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(Organik.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kalengcat(),0, 197);
+                getWorld().addObject(new Pisang(),0, 197);
                 getWorld().removeObject(this);
             }
     }

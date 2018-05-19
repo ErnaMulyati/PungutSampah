@@ -19,7 +19,7 @@ public class Kertasrusak extends Sampah
         }
         
         if(getX() >= 999){
-            getWorld().addObject(new Kalengsarden(),0, 197);
+            getWorld().addObject(new Pisang(),0, 197);
             getWorld().removeObject(this);
             return;
         }

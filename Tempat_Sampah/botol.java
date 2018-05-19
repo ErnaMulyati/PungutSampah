@@ -19,7 +19,7 @@ public class Botol extends Sampah
         }
         
         if(getX() >= 999){
-            getWorld().addObject(new Daun(),0, 197);
+            getWorld().addObject(new Kalengsarden(),0, 197);
             getWorld().removeObject(this);
             return;
         }
@@ -34,24 +34,24 @@ public class Botol extends Sampah
         if(Greenfoot.mouseDragEnded(this)){
             if(getOneIntersectingObject(Kaca.class) !=null){
                 ((Bersih) getWorld()).countPop();
-                getWorld().addObject(new Kertasrusak(),0, 197);
+                getWorld().addObject(new Kalengcat(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(Kaleng.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kertasrusak(),0, 197);
+                getWorld().addObject(new Kalengcat(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(SampahKertas.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kertasrusak(),0, 197);
+                getWorld().addObject(new Kalengcat(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(Organik.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kertasrusak(),0, 197);
+                getWorld().addObject(new Kalengcat(),0, 197);
                 getWorld().removeObject(this);
             }
-    } 
     }    
+}
 }

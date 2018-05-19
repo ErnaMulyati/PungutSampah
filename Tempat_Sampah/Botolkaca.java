@@ -19,7 +19,7 @@ public class Botolkaca extends Sampah
         }
         
         if(getX() >= 999){
-            getWorld().addObject(new Pisang(),0, 197);
+            getWorld().addObject(new Apel(),0, 197);
             getWorld().removeObject(this);
             return;
         }

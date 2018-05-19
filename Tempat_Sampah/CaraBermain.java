@@ -1,19 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MenuUtama here.
+ * Write a description of class CaraBermain here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MenuUtama extends World
+public class CaraBermain extends World
 {
 
     /**
-     * Constructor for objects of class MenuUtama.
+     * Constructor for objects of class CaraBermain.
      * 
      */
-    public MenuUtama()
+    public CaraBermain()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(880, 600, 1); 
@@ -26,10 +26,8 @@ public class MenuUtama extends World
      */
     private void prepare()
     {
-        Mulai mulai = new Mulai();
-        addObject(mulai,190,515);
-        Bantuan bantuan = new Bantuan();
-        addObject(bantuan,45,570);
-        bantuan.setLocation(37,567);
+        Kembali kembali = new Kembali();
+        addObject(kembali,790,554);
+        kembali.setLocation(785,551);
     }
 }

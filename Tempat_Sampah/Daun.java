@@ -34,22 +34,22 @@ public class Daun extends Sampah
         if(Greenfoot.mouseDragEnded(this)){
             if(getOneIntersectingObject(Organik.class) !=null){
                 ((Bersih) getWorld()).countPop();
-                getWorld().addObject(new Daun(),0, 197);
+                getWorld().addObject(new Apel(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(Kaca.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Daun(),0, 197);
+                getWorld().addObject(new Apel(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(SampahKertas.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Daun(),0, 197);
+                getWorld().addObject(new Apel(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(Kaleng.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Daun(),0, 197);
+                getWorld().addObject(new Apel(),0, 197);
                 getWorld().removeObject(this);
             }
     } 
