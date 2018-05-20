@@ -16,7 +16,8 @@ public class MenuUtama extends World
     public MenuUtama()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(880, 600, 1); 
+        super(880, 600, 1);
+        Greenfoot.playSound("music.mp3");
         prepare();
     }
 

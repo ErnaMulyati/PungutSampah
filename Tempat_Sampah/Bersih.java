@@ -17,7 +17,7 @@ public class Bersih extends World
     public Bersih()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1000, 710, 1); 
+        super(1000, 730, 1); 
         
         prepare();
     }
@@ -28,7 +28,7 @@ public class Bersih extends World
      */
     private void prepare()
     {
-        addObject(counter, 47,26);
+        addObject(counter, 60,40);
         counter.setLocation(551, 385);
         
         Timer timer2 = new Timer();
@@ -58,7 +58,7 @@ public class Bersih extends World
         Kalengsarden kalengsarden = new Kalengsarden();
         addObject(kalengsarden, 861, 197);
         kalengsarden.setLocation(865, 197);
-        Botol botol = new Botol();
+        botol botol = new botol();
         addObject(botol, 799, 197);
         Daun daun = new Daun();
         addObject(daun, 900, 197);

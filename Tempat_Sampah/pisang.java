@@ -19,7 +19,7 @@ public class Pisang extends Sampah
         }
         
         if(getX() >= 999){
-            getWorld().addObject(new Botol(),0, 197);
+            getWorld().addObject(new botol(),0, 197);
             getWorld().removeObject(this);
             return;
         }
