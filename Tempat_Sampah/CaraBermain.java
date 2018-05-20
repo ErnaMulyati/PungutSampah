@@ -27,7 +27,7 @@ public class CaraBermain extends World
     private void prepare()
     {
         Kembali kembali = new Kembali();
-        addObject(kembali,790,554);
+        addObject(kembali,800,556);
         kembali.setLocation(785,551);
     }
 }

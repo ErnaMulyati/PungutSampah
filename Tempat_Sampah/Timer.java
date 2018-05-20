@@ -8,8 +8,8 @@ import greenfoot.Color;
  */
 public class Timer extends Actor
 {
-    private int time = 45;
-    private int count = 45;
+    private int time = 50;
+    private int count = 50;
     /**
      * Act - do whatever the Timer wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
