@@ -9,7 +9,7 @@ import java.*;
 public class Bersih extends World
 {
     Counter counter = new Counter("Score: ");
-
+    GreenfootSound backgroundMusic = new GreenfootSound ("musik.mp3");
     /**
      * Constructor for objects of class Bersih.
      * 
@@ -20,6 +20,7 @@ public class Bersih extends World
         super(1000, 730, 1); 
         
         prepare();
+        backgroundMusic.playLoop();
     }
     
     /**
@@ -58,7 +59,7 @@ public class Bersih extends World
         Kalengsarden kalengsarden = new Kalengsarden();
         addObject(kalengsarden, 861, 197);
         kalengsarden.setLocation(865, 197);
-        botol botol = new botol();
+        Botol botol = new Botol();
         addObject(botol, 799, 197);
         Daun daun = new Daun();
         addObject(daun, 900, 197);
@@ -145,9 +146,20 @@ public class Bersih extends World
         counter.subtract(20);
     }
     
+    public void stopped()
+    {
+        backgroundMusic.pause();
+    }
+    
+    public void started()
+    {
+        backgroundMusic.playLoop();
+    }
+    
     public void gameOver()
     {
         addObject(new Score(counter.getValue()), getWidth()/2, getHeight()/2);
     }
+    
 }
 

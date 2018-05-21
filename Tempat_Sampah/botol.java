@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class botol extends Sampah
+public class Botol extends Sampah
 {
     /**
      * Act - do whatever the Botol wants to do. This method is called whenever
@@ -19,7 +19,7 @@ public class botol extends Sampah
         }
         
         if(getX() >= 999){
-            getWorld().addObject(new Kalengsarden(),0, 197);
+            getWorld().addObject(new Pisang(),0, 197);
             getWorld().removeObject(this);
             return;
         }
@@ -32,26 +32,26 @@ public class botol extends Sampah
         }
         
         if(Greenfoot.mouseDragEnded(this)){
-            if(getOneIntersectingObject(Kaca.class) !=null){
+            if(getOneIntersectingObject(Organik.class) !=null){
                 ((Bersih) getWorld()).countPop();
-                getWorld().addObject(new Kalengcat(),0, 197);
+                getWorld().addObject(new Apel(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(Kaleng.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kalengcat(),0, 197);
+                getWorld().addObject(new Apel(),0, 197);
                 getWorld().removeObject(this);
             }
             else if(getOneIntersectingObject(SampahKertas.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kalengcat(),0, 197);
+                getWorld().addObject(new Apel(),0, 197);
                 getWorld().removeObject(this);
             }
-            else if(getOneIntersectingObject(Organik.class) !=null){
+            else if(getOneIntersectingObject(Kaca.class) !=null){
                 ((Bersih) getWorld()).mincountPop();
-                getWorld().addObject(new Kalengcat(),0, 197);
+                getWorld().addObject(new Apel(),0, 197);
                 getWorld().removeObject(this);
             }
+    }
     }    
-}
 }
